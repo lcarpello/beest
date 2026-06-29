@@ -8,4 +8,6 @@ When I make projects, I like to hide easter eggs in them, whether it is homemade
 
 sorry, as I was saying, I hid an easter egg in the krazy kalkulator where if you type "beestisbest" into the third box and click convert from miles, it takes you to a secret page, and if you type "MOTERWAYMAYHEM", it takes you to an even secreter page.(If you wondering where moterwaymayhem is spelled wrong and in this at all, my and my friends made a game, but one of them who was in charge of the title screen mispelloed it so now we are all spelling moter with an "e" for the rest of our lives lol)
 
+Skipping all of the yapping now, you can contribute by going to "https://github.com/lcarpello/beest", forking the repository with the icon at the top right, then going to your github account projects, updating the files that you would like to update, and then put forward a pull request
+
 When I program, I do not do it efficiently at all, I will admin, I look at other peoples code on stack overflow and try to undestand how to use the tactics they use and do not understand it, but thats the learning process, so far this has taught me a lot about javascript variables, operations and condidional statements amoung much more, to whoever reads this if anyone, thank you for giving young people this opportunity to flourish, thank you -liam.
