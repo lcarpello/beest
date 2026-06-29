@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         .topnav {
+        background-color: #000000;
+        overflow: hidden;
+        height: 50px;
+        margin-bottom: 50px;
+        }
+
+        
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        justify-content: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        margin-left: 350px;
+        
+        }
+
+        
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+       
+        .topnav a.active {
+        background-color: #ff0c0c;
+        color: white;
+        }
+        body {
+            background-image: url("shrutepoo.gif");
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: #ff0000;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #ff0000;
+            background-color: #000000;
+            display: table;
+            margin: auto;
+        }
+        p {
+            color: #ffffff;
+        }
+        @keyframes myAnimation {
+            from {background-color: rgb(255, 0, 0);}
+            to {background-color: rgb(0, 234, 255);}
+        }
+        
+         button {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+            transition: width 0.4s, height 0.4s;
+            display: flex;  
+            flex-wrap: wrap;
+            background-color: #00f7ff;
+            color: rgb(0, 0, 0);
+            border-radius: 15px;
+            
+        }
+        button:hover {
+            width:200px;
+            height: 200px;
+            background-color: #00ff73;
+            color: #000000;
+            border-radius: 25px;
+            transition: width 0.5s, height 0.5s;
+            animation-name: myAnimation;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        h3 {
+            margin-top: 20px
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP</title>
+</head>
+<body>
+      <div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="help.html">Help</a>
+  <a href="kalk.html">calculator</a>
+  <a href="shopping.html">shopping list</a>
+</div>
+    <h1>liam's krazy kalkulator guide</h1>
+    <h2>How to navigate the input options.</h2>
+    <h3>The first input box is used to enter: The first value for addition and subtraction, salary, amount of money effected by the interest, and miles</h3>
+    <h3>The second input box is used to enter: The second value for addition and subtraction, and amount of time that the interest takes place</h3>
+    <h3>The third input box is used to enter: The interest rate in percent per year</h3>
+    <br>
+    <h2>EXAMPLES: 
+        <br>
+        <h3>sum: first + second = result, 5 + 5 = 10</h3>
+        <br>
+        <h3>minus: first - second = result, 10 - 5 = 5</h3>
+        <br>
+        <h3>VAT: first x 1.2 = result, 100 x 1.2 = 120</h3>
+        <br>
+        <h3>interest: first x second x (third  ÷ 100) + first = result, 1000 x 5 x 0.05 + 1000 = 1250</h3>
+        <br>
+       <h3>salary: first  ÷ 365.25 = result, 36525 ÷ 365.25 = 100</h3> 
+        <br>
+        <h3>first × 1.609344 = result, 1 x 1.609344 = 1.609344</h3> 
+    </h2>
+    <div class="button">
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+</body>
+</html>
