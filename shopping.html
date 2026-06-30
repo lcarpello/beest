@@ -11,21 +11,19 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: row;
-            margin-top: 25px;
+            margin-bottom: 25px;
             justify-content: center;
             align-items: center;
             float: center;
             width: 200px;
             height: 200px;
             position: relative;
-            margin-bottom: 100px;
-            margin-top: 50px;
+            margin-bottom: 100px;    
             border-radius: 20px;
         }
         body {
-            color: rgb(0, 0, 0);
-            background-color: aqua;
             font-family: arial, sans-serif;
+            background-image: url(shopping.gif);
 
         }
         button:hover{
@@ -35,30 +33,19 @@
             border-radius: 20px;
         }
         h1{
-            background-color: aqua;
+            background-color: rgb(255, 0, 0);
             display: table;
             margin: auto;
         }
-        img {
-            display: flex;
-            flex-direction: column;
-            border-radius: 20px;
-            position: fixed;
-            top: 20px;
-            left: 1100px;
-            height: 800px;
-            float: right;
-            margin-top: 200px;
-        }
           
-        .topnav {
+        .navigatiorer {
         background-color: #000000;
         overflow: hidden;
         height: 50px;
         }
 
        
-        .topnav a {
+        .navigatiorer a {
         float: left;
         color: #f2f2f2;
         text-align: center;
@@ -70,35 +57,52 @@
         }
 
         
-        .topnav a:hover {
+        .navigatiorer a:hover {
         background-color: #ddd;
         color: black;
         }
 
        
-        .topnav a.active {
+        .navigatiorer a.active {
         background-color: #ff0c0c;
         color: white;
+        }
+        img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0px;
+
+        
+        }
+        .navtext {
+            float: left;
+            position: absolute;
+            top: 2px;
+            left: 42px;
+            z-index: 10;
         }
     </style>
 </head>
 <body>
-    <div class="topnav">
+  <div class="navigatiorer">
+    <img src="calclogo.svg" alt="calculator image">
+  <h3 class="navtext">Liam's toolkit</h3>
   <a class="active" href="index.html">Home</a>
   <a href="help.html">Help</a>
   <a href="kalk.html">calculator</a>
   <a href="shopping.html">shopping list</a>
 </div>
+<br>
     <h1>SHOPPING LIST:</h1>
     <button onclick="addtolist()">Add Item</button>
     <button onclick="copytext()">Copy List</button>
     <button onclick="cleartext()">Clear text</button>
-    <img src="shopping.gif">
     <script>
         function addtolist() {
           if (document.querySelectorAll("h2").length > 0) {
   const h2s = document.querySelectorAll("h2");
-  var thing = prompt("What do you want to add to the list?");
+  var thing = prompt("What would you like to add to the list?");
   if (thing === null) return;
 
   const chars = thing.split('');
