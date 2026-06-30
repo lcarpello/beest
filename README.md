@@ -2,7 +2,7 @@ Hello, this is my read-me for my beest project yet(get it? because best and bees
 
 I chose to make this project because of lots of reasons, like, I want to improve my javascript as it will help with my goals to become a penetration tester, also, javascript I noticed is very like another language which I love to use, C++ which I use regularly for things like programming beest bots(Hopefully, lol). Overall, I think this has been a really fun project to code and a really good learning experiance(I did have to google about a billion lines of code and how to do stuff, but thats the fun part, no?).
 
-"what is this project?", you may ask, this is liam's swiss army knife of tools, which includes Krazy Kalkulator, shopping list, help pages, and secret pages, and even secreter pages:O. "why is the kalkulator krazy?" because it does really useful calculations in really useless metrics, for example, you can calculate interest if you input; principal number(how much money is being invested), how long you will keep it in to gain interest, and the interest percentage, but it tells you it in hatain gourdes. and the shopping list does a cipher shift on every word after the first.
+"what is this project?", you may ask, this is liam's toolkit, which includes Krazy Kalkulator, shopping list, help pages, and secret pages, and even secreter pages:O. "why is the kalkulator krazy?" because it does really useful calculations in really useless metrics, for example, you can calculate interest if you input; principal number(how much money is being invested), how long you will keep it in to gain interest, and the interest percentage, but it tells you it in hatain gourdes. and the shopping list does a cipher shift on every word after the first.
 
 When I make projects, I like to hide easter eggs in them, whether it is homemade music, a gif or image, I just like to hide things for people to find **SPOILERS**, if you want to do the ctf DO NOT READ THE NEXT PARAGRAPH.
 
@@ -11,3 +11,6 @@ sorry, as I was saying, I hid an easter egg in the krazy kalkulator where if you
 Skipping all of the yapping now, you can contribute by going to "https://github.com/lcarpello/beest", forking the repository with the icon at the top right, then going to your github account projects, updating the files that you would like to update, and then put forward a pull request
 
 When I program, I do not do it efficiently at all, I will admin, I look at other peoples code on stack overflow and try to undestand how to use the tactics they use and do not understand it, but thats the learning process, so far this has taught me a lot about javascript variables, operations and condidional statements amoung much more, to whoever reads this if anyone, thank you for giving young people this opportunity to flourish, thank you -liam.
+P.S some looks at the webpage:
+![Home Page](homepage.png)
+![calculator page](calc.png)
