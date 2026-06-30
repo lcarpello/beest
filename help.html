@@ -30,7 +30,7 @@
 
        
         .topnav a.active {
-        background-color: #ff0c0c;
+        background-color: #ff0000;
         color: white;
         }
         body {
@@ -49,29 +49,68 @@
         p {
             color: #ffffff;
         }
-        @keyframes myAnimation {
-            from {background-color: rgb(255, 0, 0);}
-            to {background-color: rgb(0, 234, 255);}
-        }
         
          
         h3 {
             margin-top: 20px
+        
+        }
+         button {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+            transition: width 0.4s, height 0.4s;
+            display: flex;  
+            flex-wrap: wrap;
+            background-color: rgb(0, 234, 255);
+            color: rgb(0, 0, 0);
+            border-radius: 20px;
+            
+        }
+             button:hover {
+            width:200px;
+            height: 200px;
+            background-color: #00ff73;
+            color: #000000;
+            border-radius: 25px;
+            transition: width 0.5s, height 0.5s;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 0px;
+
+            
+        }
+        .navtext {
+            float: left;
+            position: absolute;
+            top: 2px;
+            left: 42px;
         }
 
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HELP</title>
+    <title>help</title>
 </head>
 <body>
+    
       <div class="topnav">
+    <img src="calclogo.svg" alt="calculator image">
+  <h3 class="navtext">Liam's toolkit</h3>
   <a class="active" href="index.html">Home</a>
   <a href="help.html">Help</a>
   <a href="kalk.html">calculator</a>
   <a href="shopping.html">shopping list</a>
 </div>
-    <h1>liam's krazy kalkulator guide</h1>
+    <h1>Liam's Crazy Ca
+        lculator guide</h1>
     <h2>How to navigate the input options.</h2>
     <h3>The first input box is used to enter: The first value for addition and subtraction, salary, amount of money effected by the interest, and miles</h3>
     <h3>The second input box is used to enter: The second value for addition and subtraction, and amount of time that the interest takes place</h3>
@@ -89,10 +128,10 @@
         <br>
        <h3>salary: first  ÷ 365.25 = result, 36525 ÷ 365.25 = 100</h3> 
         <br>
-        <h3>first × 1.609344 = result, 1 x 1.609344 = 1.609344</h3> 
+        <h3>from miles: first x 1.609344 = result, 1 x 1.609344 = 1.609344</h3> 
     </h2>
-   <!--<div class="button">
-    <button onclick="window.location.href='index.html'">Back to Home</button>
-    </div>-->
+   <div class="button">
+    <button onclick="window.location.href='report.html'">Report calculator problem</button>
+    </div>
 </body>
 </html>
