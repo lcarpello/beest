@@ -7,8 +7,8 @@
     <style>
         button {
             background-color: rgb(255, 0, 0);
-            color: black;
-            font-family: Arial, sans-serif;
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif, sans-serif;
             display: flex;
             flex-direction: row;
             margin-bottom: 25px;
@@ -23,17 +23,18 @@
         }
         body {
             font-family: arial, sans-serif;
-            background-image: url(shopping.gif);
+            background-image: url("lateralus.gif");
 
         }
         button:hover{
             width: 300px;
             height:300px;
-            background-color: rgb(0, 81, 255);
+            background-color: rgb(0, 8, 255);
             border-radius: 20px;
         }
         h1{
-            background-color: rgb(255, 0, 0);
+            background-color: rgb(0, 0, 0);
+            color: #ff0000;
             display: table;
             margin: auto;
         }
@@ -45,15 +46,17 @@
         }
 
        
-        .navigatiorer a {
+        .navigatiorer a:not(.weirdo){
         float: left;
-        color: #f2f2f2;
+        color: #000000;
+        background-image: linear-gradient(to bottom right, #ff0000, rgb(0, 0, 255));
+        background-color: #ff0000;
         text-align: center;
         justify-content: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-        margin-left: 350px;
+        margin-left: 500px;
         }
 
         
@@ -65,33 +68,44 @@
        
         .navigatiorer a.active {
         background-color: #ff0c0c;
-        color: white;
+        color: rgb(0, 0, 0);
         }
         img {
         width: 50px;
         height: 50px;
         position: absolute;
-        left: 0px;
-
-        
+        left: 2px;
+        top: 8px;
         }
         .navtext {
             float: left;
             position: absolute;
             top: 2px;
-            left: 42px;
-            z-index: 10;
+            left: 50px;
+            color: #ff0000;
         }
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ff0000;
+            background-color: #000000;
+            display: table;
+            margin: auto;
+            margin-top: 20px;
+        } 
     </style>
 </head>
 <body>
   <div class="navigatiorer">
+    <a href="index.html" class="weirdo">
     <img src="calclogo.svg" alt="calculator image">
-  <h3 class="navtext">Liam's toolkit</h3>
-  <a class="active" href="index.html">Home</a>
-  <a href="help.html">Help</a>
+    
+  <h3 class="navtext"> Liam's toolkit</h3>
+  </a>
+  <a href="joke.html">joke</a>
   <a href="kalk.html">calculator</a>
-  <a href="shopping.html">shopping list</a>
+  <a class="active" href="help.html">help</a>
 </div>
 <br>
     <h1>SHOPPING LIST:</h1>
@@ -107,8 +121,7 @@
 
   const chars = thing.split('');
   const asciiValues = chars.map(ch => ch.charCodeAt(0) + 3);
-  const encodedText = asciiValues
-    .map(code => String.fromCharCode(code))
+  const encodedText = asciiValues                                                                                             
     .join('');
 
   var additem = document.createElement("h2");
@@ -143,4 +156,4 @@
         
     </script>
 </body>
-</html>
+</html> 
