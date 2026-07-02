@@ -99,9 +99,9 @@
 <body>
   <div class="navigatiorer">
     <a href="index.html" class="weirdo">
-    <img src="calclogo.svg" alt="calculator image">
+    <img src="calclogo.svg" alt="calculator image logo copyright free">
     
-  <h3 class="navtext"> Liam's toolkit</h3>
+  <h3 class="navtext"> Liam's Toolkit</h3>
   </a>
   <a href="joke.html">joke</a>
   <a href="kalk.html">calculator</a>
@@ -111,49 +111,51 @@
     <h1>SHOPPING LIST:</h1>
     <button onclick="addtolist()">Add Item</button>
     <button onclick="copytext()">Copy List</button>
-    <button onclick="cleartext()">Clear text</button>
-    <script>
-        function addtolist() {
-          if (document.querySelectorAll("h2").length > 0) {
-  const h2s = document.querySelectorAll("h2");
-  var thing = prompt("What would you like to add to the list?");
-  if (thing === null) return;
+    <button onclick="cleartext()">Clear list</button>
 
-  const chars = thing.split('');
-  const asciiValues = chars.map(ch => ch.charCodeAt(0) + 3);
-  const encodedText = asciiValues                                                                                             
-    .join('');
 
-  var additem = document.createElement("h2");
-  additem.textContent = encodedText;
 
-  h2s[h2s.length - 1].insertAdjacentElement('afterend', additem);
-}
-            else {
-            var thing = prompt("What do you want to add to the list?");
-            var additem = document.createElement("h2");
-            additem.textContent = thing;
-            const h1 = document.querySelector('h1');
-            h1.insertAdjacentElement('afterend', additem); 
-            }
-        
-        }
-        function copytext() {
-        const paragraphs = document.querySelectorAll("h2");
-        const textToCopy = Array.from(paragraphs).map(p => p.textContent).join('\n');
-        navigator.clipboard.writeText(textToCopy);
-        }
+<script>
+  function addtolist() {
+    const h2s = document.querySelectorAll("h2");
 
-        function cleartext() {
-        const deleted = document.querySelectorAll("h2");
-        deleted.forEach(element => {
-        element.remove();
-}           );
+    var thing = prompt("What would you like to add to the list?");
+    if (thing === null) return;
 
-        }
+    // Encode
+    const chars = thing.split('');
+    const asciiValues = chars.map(ch => ch.charCodeAt(0) + 3);
+    const encodedText = asciiValues.join('-');
 
-        
-        
-    </script>
+    // Decode back to human-readable
+    function decodeEncodedString(encodedText) {
+      const parts = encodedText.split('-').filter(Boolean);
+      const codes = parts.map(n => parseInt(n, 10));
+      return String.fromCharCode(...codes);
+    }
+
+    var additem = document.createElement("h2");
+    additem.textContent = decodeEncodedString(encodedText);
+
+    // Insert after the last h2 if any exist; otherwise insert after the H1
+    if (h2s.length > 0) {
+      h2s[h2s.length - 1].insertAdjacentElement('afterend', additem);
+    } else {
+      const h1 = document.querySelector('h1');
+      h1.insertAdjacentElement('afterend', additem);
+    }
+  }
+
+  function copytext() {
+    const paragraphs = document.querySelectorAll("h2");
+    const textToCopy = Array.from(paragraphs).map(p => p.textContent).join('\n');
+    navigator.clipboard.writeText(textToCopy);
+  }
+
+  function cleartext() {
+    const deleted = document.querySelectorAll("h2");
+    deleted.forEach(element => element.remove());
+  }
+</script>
 </body>
-</html> 
+</html>
