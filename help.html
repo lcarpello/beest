@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <style>
-         .topnav {
+         .navigatiorer {
         background-color: #000000;
         overflow: hidden;
         height: 50px;
@@ -10,31 +10,33 @@
         }
 
         
-        .topnav a {
+        .navigatiorer a:not(.weirdo){
         float: left;
-        color: #f2f2f2;
+        color: #000000;
+        background-image: linear-gradient(to bottom right, #ff0000, rgb(0, 0, 255));
+        background-color: #ff0000;
         text-align: center;
         justify-content: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-        margin-left: 350px;
+        margin-left: 500px;
         
         }
 
         
-        .topnav a:hover {
+        .navigatiorer a:hover {
         background-color: #ddd;
         color: black;
         }
 
        
-        .topnav a.active {
+        .navigatiorer a.active {
         background-color: #ff0000;
         color: white;
         }
         body {
-            background-image: url("shrutepoo.gif");
+             background-image: url("lateralus.gif");
             background-color: #000000;
             font-family: Arial, sans-serif;
             color: #ff0000;
@@ -66,7 +68,7 @@
             transition: width 0.4s, height 0.4s;
             display: flex;  
             flex-wrap: wrap;
-            background-color: rgb(0, 234, 255);
+            background-color: rgb(255, 0, 0);
             color: rgb(0, 0, 0);
             border-radius: 20px;
             
@@ -74,7 +76,7 @@
              button:hover {
             width:200px;
             height: 200px;
-            background-color: #00ff73;
+            background-color: #00ffe5;
             color: #000000;
             border-radius: 25px;
             transition: width 0.5s, height 0.5s;
@@ -84,6 +86,7 @@
             height: 50px;
             position: absolute;
             left: 0px;
+            top: 8px;
 
             
         }
@@ -91,26 +94,27 @@
             float: left;
             position: absolute;
             top: 2px;
-            left: 42px;
+            left: 50px;
+            color: #ff0000;
         }
 
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>help</title>
+    <title>Help</title>
 </head>
 <body>
     
-      <div class="topnav">
+        <div class="navigatiorer">
+    <a href="index.html" class="weirdo">
     <img src="calclogo.svg" alt="calculator image">
-  <h3 class="navtext">Liam's toolkit</h3>
-  <a class="active" href="index.html">Home</a>
-  <a href="help.html">Help</a>
-  <a href="kalk.html">calculator</a>
-  <a href="shopping.html">shopping list</a>
+    </a>
+  <h3 class="navtext"> Liam's Toolkit</h3>
+  <a href="joke.html">Joke</a>
+  <a href="kalk.html">Calculator</a>
+  <a href="shopping.html">Shopping List</a>
 </div>
-    <h1>Liam's Crazy Ca
-        lculator guide</h1>
+    <h1>Liam's Crazy Calculator guide</h1>
     <h2>How to navigate the input options.</h2>
     <h3>The first input box is used to enter: The first value for addition and subtraction, salary, amount of money effected by the interest, and miles</h3>
     <h3>The second input box is used to enter: The second value for addition and subtraction, and amount of time that the interest takes place</h3>
